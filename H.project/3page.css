@@ -1,0 +1,514 @@
+                    /* index and globals */
+                    html {
+                        font-size: 15px;
+                        line-height: 1.5;
+                        background-color: #E5E5E5;
+                        margin: 0;
+                    }
+
+                    body {
+                        height: auto;
+                        margin: 10px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+                    span {
+                        color: #E76F51;
+                        font-weight: bold;
+                    }
+
+                    /*************************** GLOBAL HEADER **************************/
+                    header {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: auto;
+                        background-color: #264653;
+                        flex-direction: row;
+                        align-items: center;
+                        border-bottom: 4px solid #E76F51;
+                        padding: 6px 0;
+                        letter-spacing: 2px;
+                    }
+
+                    h1 {
+                        margin-left: 60px;
+                        color: white;
+                    }
+
+                    nav ul {
+                        margin-right: 60px;
+                    }
+
+                    nav li {
+                        display: inline-block;
+                        margin: auto;
+                        text-transform: uppercase;
+                    }
+
+                    nav a {
+                        text-decoration: none;
+                        color: white;
+                        margin: 0 10px;
+
+                    }
+
+                    nav a span:hover, a:hover {
+                        color: #ccc;
+                    }
+
+                    /* ------------------------------------------ */
+                    /* center content */
+                    #main {
+                        margin: auto;
+                        height: 600px;
+                        width: auto;
+                        background: url("/img/form.jpg");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        text-align: center;
+                        color: white;
+                    }
+
+                    #main div {
+                        margin: auto;
+                        height: 100%;
+                        width: auto;
+                        background-color: rgba(0, 0, 0, 0.45);
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    #main h2 {
+                        margin: auto;
+                        padding-top: 125px;
+                        font-size: 52px;
+                        width: 80%;
+                    }
+
+                    #main p {
+                        margin: auto;
+                        margin-top: 20px;
+                        font-size: 18px;
+                        width: 80%;
+                    }
+
+                    /* ------------------------------------------ */
+                    /***********************GLOBAL NEWSLETTER *************************/
+                    #sub {
+                        margin: 0;
+                        background: #264653;
+                        padding: 40px 0;
+                        color: white;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 4px solid #ccc;
+                    }
+
+                    #sub label {
+                        margin-left: 6%;
+                        height: 30px;
+                        font-size: 20px;
+                    }
+
+                    #sub div {
+                        margin-right: 6%;
+                    }
+
+                    #sub input {
+                        height: 27px;
+                        width: 225px;
+                    }
+
+                    #sub button {
+                        padding: 9px 20px;
+                        border: none;
+                        color: white;
+                        background-color: #E76F51;
+                    }
+
+                    #sub button:hover {
+                        background-color: #c96248;
+                    }
+
+                    /* ------------------------------------------ */
+                    /* the three */
+                    #three {
+                        display: flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-evenly;
+                    }
+
+                    img {
+                        margin-top: 25px;
+                        height: 130px;
+                        width: auto;
+                        border-bottom: solid 1px grey;
+                    }
+
+                    .the {
+                        width: 25%;
+                    }
+
+                    .the:nth-of-type(2) {
+                        margin-left: 50px;
+                        margin-right: 50px;
+                    }
+
+                    #three p {
+                        margin: auto;
+                        margin-bottom: 20px;
+                        font-size: 15px;
+                    }
+
+                    /* ------------------------------------------ */
+                    /********************************GLOBAL FOOTER*****************************/
+                    footer {
+                        margin-top: 50px;
+                        text-align: center;
+                        padding: 25px 0;
+                        background-color: #E76F51;
+                        color: white;
+                        border-top: 4px solid #ccc;
+                        font-size: 15px;
+                    }
+
+                    /* ------------------------------------------ */
+
+                    /*ABOUT PAGE*/
+                    #abouts {
+                        margin: auto;
+                        display: flex;
+                        margin: 3% 6%;
+                        flex-direction: row;
+                    }
+
+                    #abouts p {
+                        font-size: 16px;
+                    }
+
+                    #about1 {
+                        margin: auto;
+                        padding: 0 15px;
+                    }
+
+                    #about1 p:nth-of-type(3) {
+                        color: white;
+                        background-color: #264653;
+                        padding: 20px 15px;
+                    }
+
+                    #about2 {
+                        color: white;
+                        background-color: #264653;
+                        padding: 0 15px;
+                        width: 100%;
+                        margin-left: 30px;
+                    }
+
+                    /* ------------------------------------------ */
+                    /* SERVICES */
+                    section {
+                        display: flex;
+                        margin: 1% 6%;
+                    }
+
+                    .box {
+                        padding: 5px 15px;
+                        width: 100%;
+                        background-color: rgb(211, 211, 211);
+                        border: solid 1px rgb(190, 190, 190);
+                        margin-right: 50px;
+                        margin-top: 5px;
+
+                    }
+
+                    .box:nth-of-type(1) .box:nth-of-type(2) {
+                        margin-bottom: 5px;
+                    }
+
+                    .box p {
+                        font-size: 15px;
+                    }
+
+                    section form {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #264653;
+                        color: white;
+                        padding: 10px 15px 30px 15px;
+                        width: 40%;
+                        margin-left: 50px;
+                        margin-top: 61px;
+                        height: 50%;
+                    }
+
+                    #quote label {
+                        margin-top: 40px;
+                    }
+
+                    #quote label:nth-of-type(1) {
+                        margin-top: 15px;
+                    }
+
+                    #quote input {
+                        height: 30px;
+                    }
+
+                    section form input[type="textarea"] {
+                        padding-bottom: 30px;
+                    }
+
+                    #quote button {
+                        margin-top: 45px;
+                        padding: 12px 20px;
+                        border: none;
+                        color: white;
+                        background-color: #E76F51;
+                    }
+
+                    #quote button:hover {
+                        background-color: #c96248;
+                    }
+
+                    /********************************************     @MEDIA'S    *************************************/
+                    /* -------------@MEDIA HEADER 768---------------- */
+                    @media(max-width: 800px) {
+                        body {
+                            width: 100%;
+                            height: auto;
+                            margin: 0;
+                        }
+
+                        header {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        h1 {
+                            margin: auto;
+                            margin-top: 10px;
+                            color: white;
+                        }
+
+                        nav ul {
+                            margin: 10px 0;
+                            padding: 0;
+                        }
+
+                        nav li {
+                            display: inline-block;
+                            margin: auto;
+                            text-transform: uppercase;
+                        }
+
+                        nav a {
+                            text-decoration: none;
+                            color: white;
+                            margin: 0 10px;
+                        }
+                    }
+
+                    /* -------------@MEDIA CENTER 768---------------- */
+                    @media(max-width: 768px) {
+                        #main {
+                            margin: auto;
+                            height: 400px;
+                            width: auto;
+                            color: white;
+                        }
+
+                        #main h2 {
+                            margin: auto;
+                            padding-top: 50px;
+                            font-size: 35px;
+                        }
+
+                        #main p {
+                            margin: auto;
+                            margin-top: 10px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    /* -------------@MEDIA NEWSLETTER 768---------------- */
+                    @media(max-width: 768px) {
+                        #sub {
+                            margin: 0;
+                            background: #264653;
+                            padding: 15px 0;
+                            color: white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-bottom: 4px solid #ccc;
+                        }
+
+                        #sub label {
+                            margin: 0 0 10px 0;
+                        }
+
+                        #sub div {
+                            margin: 0;
+                        }
+
+                        #sub input {
+                            height: 27px;
+                            width: 225px;
+                        }
+                    }
+
+                    /* -------------@MEDIA THREE 768---------------- */
+                    @media(max-width: 768px) {
+                        #three {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            align-content: center;
+                            justify-content: center;
+                        }
+
+                        img {
+                            margin-top: 25px;
+                            height: 200px;
+                            width: auto;
+                            border-bottom: solid 1px grey;
+                        }
+
+                        .the {
+                            width: 90%;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            margin: auto;
+                        }
+
+                        .the:nth-of-type(1) {
+                            margin-top: 20px;
+                        }
+
+                        .the:nth-of-type(2) {
+                            margin: auto;
+                        }
+
+                        #three p {
+                            margin: auto;
+                            margin-bottom: 20px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    /* -------------@MEDIA THREE 768---------------- */
+                    @media(max-width: 768px) {
+                        #abouts {
+                            margin: auto;
+                            display: flex;
+                            flex-direction: column;
+                            width: 90%;
+                            ;
+                        }
+
+                        #abouts p {
+                            font-size: 14px;
+                        }
+
+                        #about1 {
+                            margin: 10px auto;
+                            padding: 0 0px;
+                            width: 100%;
+                        }
+
+                        #about1 p:nth-of-type(3) {
+                            color: white;
+                            background-color: #264653;
+                            padding: 10px;
+                        }
+
+                        #about2 {
+                            color: white;
+                            background-color: #264653;
+                            padding: 10px;
+                            width: 100%;
+                            margin: 10px auto;
+                            box-sizing: border-box;
+                        }
+                    }
+
+
+                    /* -------------@MEDIA SERVICE 768---------------- */
+                    @media(max-width: 768px) {
+                        section {
+                            display: flex;
+                            margin: auto;
+                            flex-direction: column;
+                            justify-content: center;
+                            width: 90%;
+                        }
+
+                        .box {
+                            padding: 0px 10px;
+                            width: 100%;
+                            background-color: rgb(211, 211, 211);
+                            border: solid 1px rgb(190, 190, 190);
+                            margin-right: 0px;
+                            margin-top: 7px;
+                            box-sizing: border-box;
+
+                        }
+
+                        .box:nth-of-type(1), .box:nth-of-type(2) {
+                            margin-bottom: 0px;
+                        }
+
+                        .box p {
+                            font-size: 15px;
+                        }
+
+                        section form {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: start;
+                            background-color: #264653;
+                            color: white;
+                            padding: 0 12px 20px 12px;
+                            width: 100%;
+                            margin-top: 30px;
+                            margin-bottom: 20px;
+                            margin-left: 0px;
+                            height: 50%;
+                            box-sizing: border-box;
+                        }
+
+                        #quote label {
+                            margin-top: 30px;
+                        }
+
+                        #quote label:nth-of-type(1) {
+                            margin-top: 0px;
+                        }
+
+                        #quote input {
+                            height: 25px;
+                        }
+
+                        section form input[type="textarea"] {
+                            padding-bottom: 30px;
+                        }
+
+                        #quote button {
+                            margin-top: 45px;
+                            padding: 12px 20px;
+                            border: none;
+                            color: white;
+                            background-color: #E76F51;
+                        }
+
+                        #quote button:hover {
+                            background-color: #c96248;
+                        }
+                    }
